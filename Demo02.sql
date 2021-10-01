@@ -8,7 +8,7 @@ P1, P2, P4, P6, P11 or P15.
 
 */
 
-CREATE DATABASE GX_05( EDITION = 'GeneralPurpose', SERVICE_OBJECTIVE = 'GP_S_Gen5_1' ) ;
+CREATE DATABASE GX_99( EDITION = 'GeneralPurpose', SERVICE_OBJECTIVE = 'GP_S_Gen5_1' ) ;
 
 SELECT  d.name,   
      slo.*    
