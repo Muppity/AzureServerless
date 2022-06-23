@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build">
+  <Sdk Name="Microsoft.Build.Sql" Version="0.1.3-preview" />
+  <PropertyGroup>
+    <Name>SQL_Demo_Test_set</Name>
+    <ProjectGuid>{367CD9D6-10CF-4F1F-ABDC-AFC6C62D2F7B}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
+    <ModelCollation>1033, CI</ModelCollation>
+  </PropertyGroup>
+  <Target Name="BeforeBuild">
+    <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
+  </Target>
+  <ItemGroup>
+    <Build Include="..\Demo02.sql" />
+    <Build Include="..\backupDatabase2.sql" />
+    <Build Include="..\MonitorCache.sql" />
+    <Build Include="..\Demo4.sql" />
+    <Build Include="..\Demo02_02.sql" />
+  </ItemGroup>
+</Project>

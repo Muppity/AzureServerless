@@ -75,3 +75,8 @@ MODIFY ( SERVICE_OBJECTIVE = ELASTIC_POOL ( name = SQLPOOL ) ) ;
 */
 ALTER DATABASE  [GX02]
 Modify Name =  GX03 ;
+
+
+select d.name,slo.*
+from sys.databases databasesjoin sys.database_service_objectives slo
+on d.database_id=slo.database_id;
